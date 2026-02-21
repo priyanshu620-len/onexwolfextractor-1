@@ -7,9 +7,18 @@ from config import ADMIN_BOT_USERNAME
 START_TXT = """
 **ʜᴇʟʟᴏ** {},
 
-**<blockquote>ɪ'ᴍ ᴀᴅᴇᴘᴛ ᴀᴛ ᴇxᴛʀᴀᴄᴛɪɴɢ ᴏɴʟɪɴᴇ ᴄᴏᴜʀsᴇs ᴡɪᴛʜ ᴄᴜᴛᴛɪɴɢ-ᴇᴅɢᴇ ᴛᴇᴄʜɴᴏʟᴏɢʏ. ɪ'ᴠᴇ ᴍᴀɴᴀɢᴇᴅ ᴛᴏ ɢᴀᴛʜᴇʀ ʟɪɴᴋs ғᴏʀ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴜʀsᴇs, ᴍᴀᴋɪɴɢ ᴛʜᴇ ᴘʀᴏᴄᴇss ᴇғғᴏʀᴛʟᴇss ᴀɴᴅ ᴇғғɪᴄɪᴇɴᴛ.</blockquote>**
+**<blockquote>💎 Welcome to Premium Extractor Bot 💎
+╾─────────────────────────╼
+⚙️ Choose your mode below:
 
-**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@Saini_extractor_bot">Aᴅᴍɪɴ 🫠</a></blockquote>**
+🔐 Login Required: For apps that need ID & Password.
+🚀 Without Login: Extract freely from supported apps.
+╾─────────────────────────╼
+🧠 Tip: Use correct input format for smooth extraction.
+💬 Need Help? Tap 'Developer' below for direct support.
+╾─────────────────────────╼.</blockquote>**
+
+**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@ONeX_sell">𓆩ONҽX🐦‍🔥𓆪 🚀</a></blockquote>**
 """
 
 FORCE_MSG = """

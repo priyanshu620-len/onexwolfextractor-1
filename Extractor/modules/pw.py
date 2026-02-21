@@ -303,14 +303,10 @@ async def pw_login(app, message):
 
         up = (f"**Login Succesfull for PW:** `{token}`")
         captionn = (f" App Name : Physics Wallah \n\n PURCHASED BATCHES : {batch_text}")
-        caption = (
-                 f"࿇ ══━━ 🏦 ━━══ ࿇\n\n"
-                 f"🌀 **Aᴘᴘ Nᴀᴍᴇ** : ᴘʜʏsɪᴄs ᴡᴀʟʟᴀʜ (𝗣𝘄)\n"
-                 f"============================\n\n"
-                 f"✳️**Bᴀᴛᴄʜ ID** : **{target_id}**\n"
-                 f"🎯 **Bᴀᴛᴄʜ Nᴀᴍᴇ** : `{batch_name}`\n"
-                 f"⚡ **Extraction Time**: {extraction_time:.2f}s\n\n"
-                 f"🌐 **Jᴏɪɴ Us** : {join}\n"
+        caption = ( 
+                 f"🎯 **PW Pro** : `{batch_name}`\n\n"
+                 f"🆔 Bᴀᴛᴄʜ ID : **{target_id}**\n\n"
+                 f"⚡ **Extraction Time**: {extraction_time:.2f}s\n\n"         
                  f"❄️ **Dᴀᴛᴇ** : {time_new}")
 
         await app.send_document(chat_id=message.chat.id, document=filename, caption=caption)

@@ -3,26 +3,26 @@ from os import getenv
 
 
 # ------------------------------------------------
-API_ID = int(os.environ.get("API_ID", "22873037"))
+API_ID = int(os.environ.get("API_ID", "34320281"))
 # ------------------------------------------------
-API_HASH = os.environ.get("API_HASH","dfb366687851460a58461c5a50f5b")
+API_HASH = os.environ.get("API_HASH","e55840d9b1ba82ba7748a30e2bbbfc1a")
 # ------------------------------------------------
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7835844710:AAE66mbYEhUU6nQ_eVd9LkKeJpblqE")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8524040451:AAEqOrpt0apY2TP1CngpFSzKsfnqbFub5Gc")
 # ------------------------------------------------
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "@PRO_TXT_EXTRATOR_BOT")
-BOT_TEXT = "@Saini_extractor_bot"
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "@ONeXExT_bot")
+BOT_TEXT = "@ONeXExT_bot"
 # ------------------------------------------------
-OWNER_ID = int(os.environ.get("OWNER_ID", "7326627068"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "8301160173"))
 # ------------------------------------------------
 # //LOG CHANNEL ID 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002606919098"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003533149811"))
 
 # //FORCE_CHANNEL_ID
-CHANNEL_ID2 = int(os.environ.get("CHANNEL_ID2", "-1002684674627")) 
+CHANNEL_ID2 = int(os.environ.get("CHANNEL_ID2", "-1003533149811")) 
 # ------------------------------------------------
-MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://vikassonawale0:JWyQFas7vlG1bkaL@cluster0.beermge.mongodb.net/?retryWrites=true&w=majority")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://ONeX_db_user:onexvartikuu142062@cluster0.ga3zort.mongodb.net/?appName=Cluster0")
 # -----------------------------------------------
-PREMIUM_LOGS = int(os.environ.get("PREMIUM_LOGS", "-1002694695011"))
+PREMIUM_LOGS = int(os.environ.get("PREMIUM_LOGS", "-1003533149811"))
 # -----------------------------------------------
 join = '<a href="https://t.me/nothing_saini">✳️ JOIN BACKUP</a>'
 # -----------------------------------------------
@@ -30,7 +30,7 @@ UNSPLASH_ACCESS_KEY = 'RabDRmuXXBobanmwwbvpP5LwoG4J8ox34y5Sstz-9jk'
 # -----------------------------------------------
 UNSPLASH_QUERY = 'animal baby'
 # -----------------------------------------------
-ADMIN_BOT_USERNAME = "Saini_extractor_bot" #without @
+ADMIN_BOT_USERNAME = "ONeXExT_bot" #without @
 
 THUMB_URL = os.environ.get("THUMB_URL", "https://i.ibb.co/JWwQmgvQ/360-F-1056787073-t-K27-Cw-C8-PNCHsnn7lo88-Sz7y4-YFpw-KNd.webp")
 

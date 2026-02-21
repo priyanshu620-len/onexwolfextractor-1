@@ -570,7 +570,7 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                              f"🔑 **Oʀɢ Cᴏᴅᴇ** : `{org_code}`\n"
                                              f"============================\n\n"
                                              f"🎯 **Bᴀᴛᴄʜ Nᴀᴍᴇ** : `{clean_batch_name}`\n"
-                                             f"🎬Videos : {video_count} | 📁Docs : {pdf_count} | Images🖼 : {image_count} \n
+                                             f"🎬Videos : {video_count} | 📁Docs : {pdf_count} | Images🖼 : {image_count} \n"
                                              f"⌛ **Tɪᴍᴇ Tᴀᴋᴇɴ** : {formatted_time}</blockquote>\n\n"
                                              
                                             

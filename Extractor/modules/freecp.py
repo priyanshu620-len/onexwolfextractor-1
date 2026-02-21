@@ -565,7 +565,7 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                     else:
                                         formatted_time = f"{minutes} minutes {seconds} seconds"
 
-                                    caption = f"{mention}\n\n"
+                                    caption = ( f"{mention}\n\n"
     f"🌀 <b>App Name</b> : {App_Name}\n"
     f"🔑 <b>Org Code</b> : <code>{org_code}</code>\n"
     f"============================\n\n"

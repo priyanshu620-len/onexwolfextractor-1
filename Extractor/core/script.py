@@ -7,7 +7,7 @@ from config import ADMIN_BOT_USERNAME
 START_TXT = """
 **ʜᴇʟʟᴏ** {},
 
-**<blockquote>💎 Welcome to Premium Extractor Bot 💎
+**💎 Welcome to Premium Extractor Bot 💎
 ╾─────────────────────────╼
 ⚙️ Choose your mode below:
 
@@ -16,9 +16,9 @@ START_TXT = """
 ╾─────────────────────────╼
 🧠 Tip: Use correct input format for smooth extraction.
 💬 Need Help? Tap 'Developer' below for direct support.
-╾─────────────────────────╼.</blockquote>**
+╾─────────────────────────╼.**
 
-**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@ONeX_sell">𓆩ONҽX🐦‍🔥𓆪 🚀</a></blockquote>**
+**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@ONeX_sell">𓆩ONҽX🐦‍🔥𓆪 </a></blockquote>**
 """
 
 FORCE_MSG = """

@@ -4,113 +4,91 @@ from config import ADMIN_BOT_USERNAME
 
 # ------------------------------------------------------------ #
 
-START_TXT = """
-**ʜᴇʟʟᴏ** {},
+START = """
+<b><u>👋 Hello {}, I'm Txt Extractor Bot at your service. 🤖</u>
 
-**💎 Welcome to Premium Extractor Bot 💎
-╾─────────────────────────╼
-⚙️ Choose your mode below:
+To start extracting URLs, simply send /app. 📲
 
-🔐 Login Required: For apps that need ID & Password.
-🚀 Without Login: Extract freely from supported apps.
-╾─────────────────────────╼
-🧠 Tip: Use correct input format for smooth extraction.
-💬 Need Help? Tap 'Developer' below for direct support.
-╾─────────────────────────╼.**
+<blockquote><i>🔓 I support over 100+ apps for seamless URL extraction.
+📥 After extracting the URLs, you can easily download the videos/pdfs using any of my Uploader Bot.⏬</blockquote></i>
 
-**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@ONeX_sell">𓆩ONҽX🐦‍🔥𓆪 </a></blockquote>**
+<u>For any queries, contact [Admin](https://t.me/USERNAME)</u></b>
 """
 
-FORCE_MSG = """
-**ʜᴇʏ** {}
+APP = """
+<b><i>👋 Hey there! I'm your Txt Extractor bot!🤖</i>
 
-**<blockquote>ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ᴀɢᴀɪɴ !</blockquote>**
 
-**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@Saini_extractor_bot">Aᴅᴍɪɴ 🫠</a></blockquote>**
+<blockquote>🚨 If you encounter any issues or can't extract any text file, just contact your [Admin](https://t.me/USERNAME).
+
+💬 Got an app you'd like to add? Feel free to reach out to me anytime!</blockquote>
+
+
+<i>👇 Choose an option below and let's get started!</i></b>
 """
 
-MODES_TXT = """
-**<blockquote>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴍᴏᴅᴇ sᴇᴄᴛɪᴏɴ. ʜᴇʀᴇ, ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ʙᴇᴛᴡᴇᴇɴ ᴛᴡᴏ ᴍᴏᴅᴇs: ʟᴏɢɪɴ ᴍᴏᴅᴇ ᴏʀ ᴡɪᴛʜᴏᴜᴛ ʟᴏɢɪɴ ᴍᴏᴅᴇ.</blockquote>**
+UPGRADE ="""
+<b><u>Hey👋, Choose Your Plan Below:-</u>
+
+
+
+<i>🆓====FREE PLAN USER====🆓</i>
+<blockquote>🔍 Only extract video URLs from APPX & Classplus apks!</blockquote>
+
+
+<i>🤑====VIP PLAN USER====🤑</i>
+<blockquote>🕵🏻‍♀️ Unlimited URL extraction for 1 month only For Few Apks!
+❌ Txt-to-Video (Non-DRM) bot is not available in this plan.</blockquote>
+<blockquote>💵 Price: ₹800 for 28 days</blockquote>
+
+
+
+<i>🦁====PRO PLAN USER====🦁</i>
+<blockquote>🔓 Extract URLs of Special Apps!
+ 🔑Extract only 5 batch URLs/per day without needing any ID or password!
+✅ Enjoy Txt-to-Video (Non-DRM) bot with this plan.</blockquote>
+<blockquote>💵 Price: ₹1000 for 10 days (or) ₹2000 for 28 days</blockquote>
+
+
+
+<i>👑====LEGEND PLAN USER====👑</i>
+<blockquote>🗿Everything Unlimited</blockquote>
+<blockquote>🚀You get seprate Non-Drm Bot</blockquote>
+<blockquote>💵 Price: ₹2500 for 28 days</blockquote>
+
+
+<i>Upgrade now and take your experience to the next level! 🚀</i></b>
 """
 
-CUSTOM_TXT = """
-⌬ **﹝𝐖 𝐈 𝐓 𝐇 𝐎 𝐔 𝐓 𝐋 𝐎 𝐆 𝐈 𝐍﹞**
-
-**<blockquote>ɪɴ ᴡɪᴛʜᴏᴜᴛ ʟᴏɢɪɴ ᴍᴏᴅᴇ, ʏᴏᴜ ᴄᴀɴ ᴇxᴛʀᴀᴄᴛ ᴀɴʏ ᴄᴏᴜʀsᴇ ғʀᴏᴍ ᴀɴʏ ᴀᴘᴘ's ʟɪɴᴋ, ʙᴜᴛ ʏᴏᴜ'ʟʟ ɴᴇᴇᴅ ᴀɴ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ ᴛʜᴀᴛ.</blockquote>**
-
+V = """<b><i>🤑====VIP PLAN USER====🤑</i>
+🕵🏻‍♀️ Unlimited URL extraction for 1 month only For Few Apk!
+❌ Txt-to-Video (Non-DRM) bot is not available in this plan.</b>
 """
 
-MANUAL_TXT = """
-⌬ **﹝𝐋 𝐎 𝐆 𝐈 𝐍﹞**
-
-**<blockquote>ɪɴ ʟᴏɢɪɴ ᴍᴏᴅᴇ, ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴs. ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴇxᴛʀᴀᴄᴛ ᴛʜᴇ ᴄᴏᴜʀsᴇ ʏᴏᴜ ᴡᴀɴᴛ.</blockquote>**
+P = """<i><b>🦁====PRO PLAN USER====🦁</i>
+🔓 Extract URLs of Special Apps!
+ 🔑Extract only 5 batches URLs Per Day without needing any ID or password!
+✅ Enjoy Txt-to-Video (Non-DRM) bot with this plan.</b>
 """
 
-
-PLANS_TXT = """
-⌬ **﹝𝐏 𝐑 𝐄 𝐌 𝐈 𝐔 𝐌﹞**
-
-<b><blockquote>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴇxᴄʟᴜsɪᴠᴇ ᴘʀᴇᴍɪᴜᴍ sᴇᴄᴛɪᴏɴ, ᴡʜᴇʀᴇ ʏᴏᴜ'ʟʟ ғɪɴᴅ ᴄᴜʀᴀᴛᴇᴅ ɪɴsɪɢʜᴛs ᴀɴᴅ ᴇxᴘᴇʀɪᴇɴᴄᴇs ᴛᴀɪʟᴏʀᴇᴅ ᴛᴏ ᴛʜᴏsᴇ sᴇᴇᴋɪɴɢ ᴛᴏᴘ-ᴛɪᴇʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀɴᴅ sᴇʀᴠɪᴄᴇs.</blockquote>
-
-<blockquote>‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ʟɪsᴛ.</blockquote></b>
-**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@Saini_extractor_bot">Aᴅᴍɪɴ 🫠</a></blockquote>**
+L = """<i><b>👑====LEGEND PLAN USER====👑</i>
+🗿You Can extract Unlimited Txts
+🚀You get seprate Non-Drm Bot</b>
 """
 
-    
-FREE_TXT = """
-⌬ **﹝𝐅 𝐑 𝐄 𝐄﹞**
-<b>
-🏆 <u>ꜰʀᴇᴇ ᴛʀɪᴀʟ</u> 🏆
-❗ ᴏɴʟʏ ꜰᴏʀ 5 ᴍɪɴᴜᴛᴇꜱ
- 
-○ ʙʏᴘᴀss ᴀʟʟ ᴄᴏᴜʀsᴇ
-○ ғᴀsᴛ ɴᴏᴅᴇ 
-</b>"""
-
-BRONZE_TXT = """
-⌬ **﹝𝐁 𝐑 𝐎 𝐍 𝐙 𝐄﹞**
-<b>
-🥉 <u>ʙʀᴏɴᴄᴇ ᴘʟᴀɴ</u>
-⏰ 7 ᴅᴀʏꜱ
-💸 ᴘʟᴀɴ ᴘʀɪᴄᴇ ➛ 300₹
-</b>"""
-
-SILVER_TXT = """
-⌬ **﹝𝐒 𝐈 𝐋 𝐕 𝐄 𝐑﹞**
-<b> 
-🥈 <u>ꜱɪʟᴠᴇʀ ᴘʟᴀɴ</u>
-⏰ 15 ᴅᴀʏꜱ 
-💸 ᴘʟᴀɴ ᴘʀɪᴄᴇ ➛ 500₹
-</b>"""
-
-GOLD_TXT = """
-⌬ **﹝𝐆 𝐎 𝐋 𝐃﹞**  
-<b>
-🥇 <u>ɢᴏʟᴅ ᴘʟᴀɴ</u>
-⏰ 30 ᴅᴀʏꜱ 
-💸 ᴘʟᴀɴ ᴘʀɪᴄᴇ ➛ 800₹
-</b>"""
+auth = """
+<b>🎉 Congrats [{}](tg://openmessage?user_id={}) for gaining access to Txt Extractor Bot! 🎉
 
 
-OTHER_TXT = """
-⌬ **﹝𝐏 𝐋 𝐀 𝐍 𝐒﹞** 
-<b>
-🎁 <u>ᴏᴛʜᴇʀ ᴘʟᴀɴ</u>
-⏰ ᴄᴜꜱᴛᴏᴍɪꜱᴇᴅ ᴅᴀʏꜱ
-💸 ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴅᴀʏꜱ ʏᴏᴜ ᴄʜᴏᴏꜱᴇ
+<i>Your have access to the bot as a:</i>
 
-👨‍💻 ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ᴏᴡɴᴇʀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴏᴛʜᴇʀ ᴘʟᴀɴ.
-</b>"""
+{}
+
+<u><i>🚀Enjoy your access for {} days!</u></i>
 
 
-PAYMENT_TXT = """<b>
-⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
-
-📸 ǫʀ ᴄᴏᴅᴇ - <a href='https://envs.sh/24T.jpg'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
-
-‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.
-</b>"""
-
+If you need any assistance, feel free to contact [Admin](https://t.me/USERNAME)</b>
+"""
 
 
 

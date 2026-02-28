@@ -564,8 +564,11 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                             formatted_time = f"{seconds} seconds"
                                     else:
                                         formatted_time = f"{minutes} minutes {seconds} seconds"
-                                        thumbnail_link = f"<a href='{https://postimg.cc/hQfZPWXy}'>&#8204;</a>"
-                                    caption = (
+                                        # 1. Define the thumbnail link (Notice: No curly braces around the URL string)
+thumbnail_link = f"<a href='https://postimg.cc/hQfZPWXy'>&#8204;</a>"
+
+# 2. Construct the caption
+caption = (
     f"{thumbnail_link}"
     f"⚡ <b>{App_Name} Extraction Report</b> ⚡\n\n"
     f"📚 <b>Batch Name:</b> <i>{clean_batch_name}</i>\n"
@@ -582,10 +585,13 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
     f"</blockquote>\n"
     f"• 👤 Extracted by: <b>ONeX 🎭</b>"
 )
-                                    await message.reply_text(
+
+# 3. Send the reply
+await message.reply_text(
     caption,
     parse_mode="HTML",
-    disable_web_page_preview=False 
+    disable_web_page_preview=False
+)
 
                                             
                                     try:

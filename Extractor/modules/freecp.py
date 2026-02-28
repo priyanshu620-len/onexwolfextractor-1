@@ -558,15 +558,27 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                     seconds = int(response_time % 60)
 
                                    # 1. Logic for Time Formatting
+try:
+    # ... your extraction logic (the code that was above line 561) ...
+    # (Example: total_content = len(data))
+    pass 
+
+except Exception as e:
+    # This handles any errors that happen in the 'try' block
+    print(f"An error occurred: {e}")
+    # You might want to return or notify the user here
+    return
+
+# NOW you can start your time formatting logic
 if minutes == 0:
     if seconds < 1:
-        # Use .2f to show milliseconds if it's very fast
         formatted_time = f"{response_time:.2f} seconds"
     else:
         formatted_time = f"{seconds} seconds"
 else:
     formatted_time = f"{minutes} minutes {seconds} seconds"
 
+# ... rest of your caption and message.reply_text code ...
 # 2. Define the thumbnail link 
 # Note: thumbnail_url must be defined earlier in your code
 thumbnail_link = f"<a href='{https://i.postimg.cc/hQfZPWXy/image.jpg}'>&#8204;</a>"

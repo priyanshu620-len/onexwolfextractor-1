@@ -4,7 +4,7 @@ import config
 ADMIN_BOT_USERNAME = getattr(config, "ADMIN_BOT_USERNAME", "YourAdminUsername")
 
 class script(object):
-    # Renamed START to START_TXT to match your start.py
+    # START_TXT must be inside the class and named correctly
     START_TXT = f"""
 <b><u>👋 Hello {{}} , I'm Txt Extractor Bot at your service. 🤖</u>
 
@@ -16,7 +16,11 @@ To start extracting URLs, simply send /app. 📲
 <u>For any queries, contact <a href="https://t.me/{ADMIN_BOT_USERNAME}">Admin</a></u></b>
 """
 
-    # Renamed APP to MANUAL_TXT and MODES_TXT to satisfy the callback handlers
+    # Added these because your start.py callbacks (modes_, manual_, custom_) need them
+    MODES_TXT = "<b>Please select the extraction mode you want to use below:</b>"
+    
+    CUSTOM_TXT = "<b>Select a direct extraction method (No login required):</b>"
+
     MANUAL_TXT = f"""
 <b><i>👋 Hey there! I'm your Txt Extractor bot!🤖</i>
 
@@ -28,20 +32,7 @@ To start extracting URLs, simply send /app. 📲
 <i>👇 Choose an option below and let's get started!</i></b>
 """
 
-    MODES_TXT = "<b>Select the extraction mode below:</b>"
-    
-    CUSTOM_TXT = "<b>Choose a custom extraction method:</b>"
-
     UPGRADE = f"""
-<b><u>Hey👋, Choose Your Plan Below:-</u>
-
-<i>🆓====FREE PLAN USER====🆓</i>
-<blockquote>🔍 Only extract video URLs from APPX & Classplus apks!</blockquote>
-
-... (rest of your upgrade text)"""
-
-    # Adding other variables for completeness
-    V = "..." 
-    P = "..."
-    L = "..."
-    AUTH = "..." # etc.
+<b><u>Hey👋, Choose Your Plan Below:-</u></b>
+... (rest of your upgrade text)
+"""

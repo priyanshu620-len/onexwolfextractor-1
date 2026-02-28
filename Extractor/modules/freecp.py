@@ -564,15 +564,29 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                             formatted_time = f"{seconds} seconds"
                                     else:
                                         formatted_time = f"{minutes} minutes {seconds} seconds"
-
-                                    caption = ( f"{mention}\n\n"
-    f"🌀 <b>App Name</b> : {App_Name}\n"
-    f"🔑 <b>Org Code</b> : <code>{org_code}</code>\n"
-    f"============================\n\n"
-    f"🎯 <b>Batch Name</b> : <code>{clean_batch_name}</code>\n"
-    f"🎬 Videos : {video_count} | 📁 Docs : {pdf_count} | 🖼 Images : {image_count}\n"
-    f"⌛ <b>Time Taken</b> : {formatted_time}"
+                                        thumbnail_link = f"<a href='{}'>&#8204;</a>"
+                                    caption = (
+    f"{thumbnail_link}"
+    f"⚡ <b>{App_Name} Extraction Report</b> ⚡\n\n"
+    f"📚 <b>Batch Name:</b> <i>{clean_batch_name}</i>\n"
+    f"<blockquote>"
+    f"• 📱 <b>App:</b> <a href='{thumbnail_url}'>{App_Name}</a>\n"
+    f"• 🆔 <b>Batch ID:</b> <code>{org_code}</code>\n"
+    f"• 🔗 <b>Total Content:</b> {total_content}\n"
+    f"• 🎥 <b>Videos:</b> {video_count} | 📄 <b>PDFs:</b> {pdf_count}\n"
+    f"• 🖼 <b>Thumbnail:</b> <a href='{thumbnail_url}'>Click Here To View</a>\n"
+    f"• ⏱ <b>Total Time Taken:</b> {formatted_time}\n"
+    f"• 📅 <b>Date-Time:</b> {current_time}\n"
+    f"• 🧾 <b>User ID:</b> <code>{user_id}</code>\n"
+    f"• 💬 <b>Username:</b> {mention}\n"
+    f"</blockquote>\n"
+    f"• 👤 Extracted by: <b>ONeX 🎭</b>"
 )
+                                    await message.reply_text(
+    caption,
+    parse_mode="HTML",
+    disable_web_page_preview=False 
+
                                             
                                     try:
                                         # Send unencrypted file to user

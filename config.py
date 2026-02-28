@@ -7,10 +7,10 @@ API_ID = int(os.environ.get("API_ID", "34320281"))
 # ------------------------------------------------
 API_HASH = os.environ.get("API_HASH","e55840d9b1ba82ba7748a30e2bbbfc1a")
 # ------------------------------------------------
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8524040451:AAEqOrpt0apY2TP1CngpFSzKsfnqbFub5Gc")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8716083436:AAEkDqnXsDlNuMHhKEJ24zO_vima4b9XLi4")
 # ------------------------------------------------
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "@ONeXExT_bot")
-BOT_TEXT = "@ONeXExT_bot"
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "@ONeXCodebot")
+BOT_TEXT = "@ONeXCodebot"
 # ------------------------------------------------
 OWNER_ID = int(os.environ.get("OWNER_ID", "8301160173"))
 # ------------------------------------------------
@@ -32,7 +32,7 @@ UNSPLASH_QUERY = 'animal baby'
 # -----------------------------------------------
 ADMIN_BOT_USERNAME = "ONeXExT_bot" #without @
 
-THUMB_URL = os.environ.get("THUMB_URL", "https://chatgpt.com/s/m_6999decf874c8191abd2b4600b8ab2ce")
+THUMB_URL = os.environ.get("THUMB_URL", "https://postimg.cc/hQfZPWXy")
 
 
 

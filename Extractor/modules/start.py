@@ -64,7 +64,10 @@ buttons = InlineKeyboardMarkup([
                 ],
                 [
                   InlineKeyboardButton("📝 Tᴇxᴛ ⟷ HTML", callback_data="converter_")
-                ]
+                ],
+                [
+                  InlineKeyboardButton("👤 Developer", url="https://t.me/ONeX_sell")
+                ],
               ])
 
 

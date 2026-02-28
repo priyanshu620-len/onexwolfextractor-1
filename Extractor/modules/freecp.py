@@ -557,17 +557,22 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                     minutes = int(response_time // 60)
                                     seconds = int(response_time % 60)
 
-                                    if minutes == 0:
-                                        if seconds < 1:
-                                            formatted_time = f"{response_time:.2f} seconds"
-                                        else:
-                                            formatted_time = f"{seconds} seconds"
-                                    else:
-                                        formatted_time = f"{minutes} minutes {seconds} seconds"
-                                        # 1. Define the thumbnail link (Notice: No curly braces around the URL string)
-thumbnail_link = f"<a href='https://postimg.cc/hQfZPWXy'>&#8204;</a>"
+                                   # 1. Logic for Time Formatting
+if minutes == 0:
+    if seconds < 1:
+        # Use .2f to show milliseconds if it's very fast
+        formatted_time = f"{response_time:.2f} seconds"
+    else:
+        formatted_time = f"{seconds} seconds"
+else:
+    formatted_time = f"{minutes} minutes {seconds} seconds"
 
-# 2. Construct the caption
+# 2. Define the thumbnail link 
+# Note: thumbnail_url must be defined earlier in your code
+thumbnail_link = f"<a href='{https://i.postimg.cc/hQfZPWXy/image.jpg}'>&#8204;</a>"
+
+# 3. Construct the caption
+# Using a single f-string with triple quotes for better readability
 caption = (
     f"{thumbnail_link}"
     f"⚡ <b>{App_Name} Extraction Report</b> ⚡\n\n"
@@ -586,11 +591,11 @@ caption = (
     f"• 👤 Extracted by: <b>ONeX 🎭</b>"
 )
 
-# 3. Send the reply
+# 4. Send the reply
 await message.reply_text(
     caption,
     parse_mode="HTML",
-    disable_web_page_preview=False
+    disable_web_page_preview=False  # Keep False to show the thumbnail preview
 )
 
                                             

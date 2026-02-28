@@ -7,9 +7,18 @@ from config import ADMIN_BOT_USERNAME
 START_TXT = """
 **ʜᴇʟʟᴏ** {},
 
-**<blockquote>ɪ'ᴍ ᴀᴅᴇᴘᴛ ᴀᴛ ᴇxᴛʀᴀᴄᴛɪɴɢ ᴏɴʟɪɴᴇ ᴄᴏᴜʀsᴇs ᴡɪᴛʜ ᴄᴜᴛᴛɪɴɢ-ᴇᴅɢᴇ ᴛᴇᴄʜɴᴏʟᴏɢʏ. ɪ'ᴠᴇ ᴍᴀɴᴀɢᴇᴅ ᴛᴏ ɢᴀᴛʜᴇʀ ʟɪɴᴋs ғᴏʀ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴜʀsᴇs, ᴍᴀᴋɪɴɢ ᴛʜᴇ ᴘʀᴏᴄᴇss ᴇғғᴏʀᴛʟᴇss ᴀɴᴅ ᴇғғɪᴄɪᴇɴᴛ.</blockquote>**
+**<blockquote>💎 Welcome to Premium Extractor Bot 💎
+╾─────────────────────────╼
+⚙️ Choose your mode below:
 
-**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@Saini_extractor_bot">Aᴅᴍɪɴ 🫠</a></blockquote>**
+🔐 Login Required: For apps that need ID & Password.
+🚀 Without Login: Extract freely from supported apps.
+╾─────────────────────────╼
+🧠 Tip: Use correct input format for smooth extraction.
+💬 Need Help? Tap 'Developer' below for direct support.
+╾─────────────────────────╼</blockquote>**
+
+**<blockquote></a></blockquote>**
 """
 
 FORCE_MSG = """
@@ -17,11 +26,11 @@ FORCE_MSG = """
 
 **<blockquote>ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ᴀɢᴀɪɴ !</blockquote>**
 
-**<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="@Saini_extractor_bot">Aᴅᴍɪɴ 🫠</a></blockquote>**
+**<blockquote>👑 ᴏᴡɴᴇʀ : </b><a href='https://t.me/ONeX_sell'>𓆩 ᴏɴᴇx 𓆪</a></blockquote>**
 """
 
 MODES_TXT = """
-**<blockquote>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴍᴏᴅᴇ sᴇᴄᴛɪᴏɴ. ʜᴇʀᴇ, ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ʙᴇᴛᴡᴇᴇɴ ᴛᴡᴏ ᴍᴏᴅᴇs: ʟᴏɢɪɴ ᴍᴏᴅᴇ ᴏʀ ᴡɪᴛʜᴏᴜᴛ ʟᴏɢɪɴ ᴍᴏᴅᴇ.</blockquote>**
+**<blockquote>I am TxT Extractor Bot.</blockquote>**
 """
 
 CUSTOM_TXT = """

@@ -17,7 +17,6 @@ START_TXT = """
 🧠 Tip: Use correct input format for smooth extraction.
 💬 Need Help? Tap 'Developer' below for direct support.
 ╾─────────────────────────╼</blockquote>**
-
 **<blockquote></a></blockquote>**
 """
 

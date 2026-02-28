@@ -564,7 +564,7 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                             formatted_time = f"{seconds} seconds"
                                     else:
                                         formatted_time = f"{minutes} minutes {seconds} seconds"
-                                        thumbnail_link = f"<a href='{}'>&#8204;</a>"
+                                        thumbnail_link = f"<a href='{https://postimg.cc/hQfZPWXy}'>&#8204;</a>"
                                     caption = (
     f"{thumbnail_link}"
     f"⚡ <b>{App_Name} Extraction Report</b> ⚡\n\n"

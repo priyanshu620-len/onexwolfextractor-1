@@ -560,51 +560,52 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                    # 1. Logic for Time Formatting
 # Corrected structure
 try:
-    # your existing code at line 561
-    do_something()
-except Exception as e:
-    print(f"An error occurred: {e}")
-
-# NOW you can start your time formatting logic
-if minutes == 0:
-    if seconds < 1:
-        formatted_time = f"{response_time:.2f} seconds"
+    # --- Place your extraction/processing logic here ---
+    # do_something() 
+    
+    # Time formatting logic
+    if minutes == 0:
+        if seconds < 1:
+            formatted_time = f"{response_time:.2f} seconds"
+        else:
+            formatted_time = f"{seconds} seconds"
     else:
-        formatted_time = f"{seconds} seconds"
-else:
-    formatted_time = f"{minutes} minutes {seconds} seconds"
+        formatted_time = f"{minutes} minutes {seconds} seconds"
 
-# ... rest of your caption and message.reply_text code ...
-# 2. Define the thumbnail link 
-# Note: thumbnail_url must be defined earlier in your code
-thumbnail_link = f"<a href='{https://i.postimg.cc/hQfZPWXy/image.jpg}'>&#8204;</a>"
+    # 2. Define the thumbnail link 
+    # FIX: Removed the curly braces from the hardcoded URL string
+    thumbnail_link = "<a href='https://i.postimg.cc/hQfZPWXy/image.jpg'>&#8204;</a>"
 
-# 3. Construct the caption
-# Using a single f-string with triple quotes for better readability
-caption = (
-    f"{thumbnail_link}"
-    f"⚡ <b>{App_Name} Extraction Report</b> ⚡\n\n"
-    f"📚 <b>Batch Name:</b> <i>{clean_batch_name}</i>\n"
-    f"<blockquote>"
-    f"• 📱 <b>App:</b> <a href='{thumbnail_url}'>{App_Name}</a>\n"
-    f"• 🆔 <b>Batch ID:</b> <code>{org_code}</code>\n"
-    f"• 🔗 <b>Total Content:</b> {total_content}\n"
-    f"• 🎥 <b>Videos:</b> {video_count} | 📄 <b>PDFs:</b> {pdf_count}\n"
-    f"• 🖼 <b>Thumbnail:</b> <a href='{thumbnail_url}'>Click Here To View</a>\n"
-    f"• ⏱ <b>Total Time Taken:</b> {formatted_time}\n"
-    f"• 📅 <b>Date-Time:</b> {current_time}\n"
-    f"• 🧾 <b>User ID:</b> <code>{user_id}</code>\n"
-    f"• 💬 <b>Username:</b> {mention}\n"
-    f"</blockquote>\n"
-    f"• 👤 Extracted by: <b>ONeX 🎭</b>"
-)
+    # 3. Construct the caption
+    caption = (
+        f"{thumbnail_link}"
+        f"⚡ <b>{App_Name} Extraction Report</b> ⚡\n\n"
+        f"📚 <b>Batch Name:</b> <i>{clean_batch_name}</i>\n"
+        f"<blockquote>"
+        f"• 📱 <b>App:</b> <a href='{thumbnail_url}'>{App_Name}</a>\n"
+        f"• 🆔 <b>Batch ID:</b> <code>{org_code}</code>\n"
+        f"• 🔗 <b>Total Content:</b> {total_content}\n"
+        f"• 🎥 <b>Videos:</b> {video_count} | 📄 <b>PDFs:</b> {pdf_count}\n"
+        f"• 🖼 <b>Thumbnail:</b> <a href='{thumbnail_url}'>Click Here To View</a>\n"
+        f"• ⏱ <b>Total Time Taken:</b> {formatted_time}\n"
+        f"• 📅 <b>Date-Time:</b> {current_time}\n"
+        f"• 🧾 <b>User ID:</b> <code>{user_id}</code>\n"
+        f"• 💬 <b>Username:</b> {mention}\n"
+        f"</blockquote>\n"
+        f"• 👤 Extracted by: <b>ONeX 🎭</b>"
+    )
 
-# 4. Send the reply
-await message.reply_text(
-    caption,
-    parse_mode="HTML",
-    disable_web_page_preview=False  # Keep False to show the thumbnail preview
-)
+    # 4. Send the reply
+    await message.reply_text(
+        caption,
+        parse_mode="HTML",
+        disable_web_page_preview=False 
+    )
+
+except Exception as e:
+    # This catches errors during the process and prevents the bot from crashing
+    print(f"An error occurred: {e}")
+    await message.reply_text(f"❌ An error occurred during extraction: {e}")
 
                                             
                                     try:

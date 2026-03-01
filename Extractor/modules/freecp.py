@@ -558,16 +558,12 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                     seconds = int(response_time % 60)
 
                                    # 1. Logic for Time Formatting
+# Corrected structure
 try:
-    # ... your extraction logic (the code that was above line 561) ...
-    # (Example: total_content = len(data))
-    pass 
-
+    # your existing code at line 561
+    do_something()
 except Exception as e:
-    # This handles any errors that happen in the 'try' block
     print(f"An error occurred: {e}")
-    # You might want to return or notify the user here
-    return
 
 # NOW you can start your time formatting logic
 if minutes == 0:
